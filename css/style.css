@@ -81,16 +81,14 @@ img {
   padding-left: 0px;
   margin: 0px;
 }
+
 .header-link-curent {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
-
   padding-top: 32px;
   padding-bottom: 32px;
   display: block;
-}
-.header-link-curent {
   position: relative;
   color: var(--blue-color);
 }
