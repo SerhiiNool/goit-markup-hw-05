@@ -122,7 +122,9 @@ img {
 .header-link:hover,
 .header-link:focus {
   color: var(--blue-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-conect {
   margin-left: auto;
@@ -159,30 +161,46 @@ img {
 .header-tel:hover,
 .header-tel:focus {
   color: var(--blue-color);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-mail:hover,
 .header-mail:focus {
   color: var(--blue-color);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-mail:hover .icon-mail {
-  fill: #2196f3;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: var(--blue-color);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-mail:hover .header-mail {
-  fill: #2196f3;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: var(--blue-color);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-mail:focus .icon-mail {
-  fill: #2196f3;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: var(--blue-color);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-tel:hover .icon-tel {
-  fill: #2196f3;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: var(--blue-color);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-tel:focus .icon-tel {
-  fill: #2196f3;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: var(--blue-color);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*----------MAIN---------*/
@@ -231,7 +249,7 @@ img {
   border-radius: 4px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier 0px 4px 4px rgba(0, 0, 0, 0.15);
+    box-shadow 250ms 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 /* -----ABOUT-----*/
 
@@ -300,9 +318,31 @@ img {
   margin-bottom: 50px;
   margin-top: 0px;
 }
+.work-img {
+  position: relative;
+}
 
 .work-img:not(:last-child) {
   margin-right: 30px;
+}
+.capabilities {
+  letter-spacing: 0.03em;
+  position: absolute;
+  bottom: 0;
+  display: block;
+  padding: 27px 80px;
+  width: 370px;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  height: 70px;
+  text-align: center;
+  text-transform: uppercase;
+
+  border-radius: 0px 0px 4px 4px;
+  margin: 0;
+  background: rgba(47, 48, 58, 0.8);
 }
 
 /*-------MASTERS-------*/
@@ -599,7 +639,7 @@ img {
 
 .url-button:focus,
 .url-button:hover {
-  color: #ffffff;
+  color: var(--white-color);
   background-color: var(--blue-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -693,7 +733,9 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: opacity, visibility;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms;
 }
 .modal {
   width: 528px;
