@@ -114,6 +114,9 @@ img {
   padding-top: 32px;
   padding-bottom: 32px;
   display: block;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-li {
   margin-right: 50px;
@@ -122,9 +125,6 @@ img {
 .header-link:hover,
 .header-link:focus {
   color: var(--blue-color);
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-conect {
   margin-left: auto;
@@ -142,6 +142,9 @@ img {
   padding-top: 32px;
   padding-bottom: 32px;
   align-items: center;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-tel {
@@ -156,51 +159,43 @@ img {
   padding-top: 32px;
   padding-bottom: 32px;
   align-items: center;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-tel:hover,
 .header-tel:focus {
   color: var(--blue-color);
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-mail:hover,
 .header-mail:focus {
   color: var(--blue-color);
-  transition-property: color;
+}
+.icon-mail {
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.icon-tel {
+  transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-mail:hover .icon-mail {
   fill: var(--blue-color);
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-mail:hover .header-mail {
   fill: var(--blue-color);
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-mail:focus .icon-mail {
   fill: var(--blue-color);
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-tel:hover .icon-tel {
   fill: var(--blue-color);
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-tel:focus .icon-tel {
   fill: var(--blue-color);
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*----------MAIN---------*/
@@ -243,13 +238,12 @@ img {
   width: 200px;
   height: 50px;
   margin-top: 30px;
+  transition: box-shadow 250ms 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .mail-btn:hover,
 .mail-btn:focus {
   border-radius: 4px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms 0px 4px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.15);
 }
 /* -----ABOUT-----*/
 
@@ -330,14 +324,15 @@ img {
   position: absolute;
   bottom: 0;
   display: block;
-  padding: 27px 80px;
-  width: 370px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
   color: #ffffff;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   height: 70px;
-  text-align: center;
   text-transform: uppercase;
   border-radius: 0px 0px 4px 4px;
   margin: 0;
@@ -366,7 +361,6 @@ img {
 .masters {
   background: #ffffff;
   padding-bottom: 30px;
-
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -403,18 +397,18 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .masters-soc-icon {
   fill: #afb1b8;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .masters-soc-link:hover .masters-soc-icon {
   fill: #ffffff;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .masters-soc-link:focus .masters-soc-icon {
   fill: #ffffff;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .masters-soc-link:hover,
@@ -426,7 +420,6 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /*-----CLIENTS----*/
 .client-section {
@@ -450,6 +443,7 @@ img {
 }
 .clients-icon {
   fill: #afb1b8;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-item + .clients-item {
@@ -465,6 +459,8 @@ img {
   box-sizing: border-box;
   border: 1px solid #afb1b8;
   border-radius: 4px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients-soc-link:hover,
 .clients-soc-link:focus {
@@ -473,12 +469,9 @@ img {
 }
 .clients-soc-link:hover .clients-icon {
   fill: #2196f3;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients-soc-link:focus .clients-icon {
   fill: #2196f3;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  border: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*-----FOOTER-----*/
@@ -503,16 +496,15 @@ img {
   line-height: 1.71;
   color: var(--white-color);
   font-style: normal;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-address:hover,
 .footer-address:focus {
   color: var(--blue-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-contacts:hover,
 .footer-contacts:focus {
   color: var(--blue-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-li {
   margin-top: 9px;
@@ -520,10 +512,10 @@ img {
 .footer-contacts {
   font-weight: 400;
   font-size: 14px;
-
   line-height: 24px;
   color: rgba(255, 255, 255, 0.6);
   font-style: normal;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-down {
   background: var(--black-back);
@@ -573,6 +565,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-soc-icon {
   fill: #ffffff;
@@ -587,7 +580,6 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /*--------GALLERY-------*/
 .portfolio-section {
@@ -625,6 +617,9 @@ img {
   border: 0;
   padding: 6px 22px;
   display: block;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .url-but-list:not(:last-child) {
@@ -643,13 +638,6 @@ img {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.portfolio-elements {
-  display: block;
-  text-decoration: none;
 }
 
 .company-name {
@@ -677,6 +665,12 @@ img {
   display: block;
   max-width: 370px;
 }
+.portfolio-elements {
+  display: block;
+  text-decoration: none;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .portfolio-elements:hover .portfolio-open-text {
   transform: translatey(0%);
 }
@@ -708,12 +702,10 @@ img {
 .portfolio-elements:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-elements:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .company {
@@ -734,7 +726,7 @@ img {
   justify-content: center;
   transition-property: opacity, visibility;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition: 250ms;
+  transition-duration: 750ms;
 }
 .modal {
   width: 528px;
